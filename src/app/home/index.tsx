@@ -4,6 +4,7 @@ import { theme } from '@/themes'
 import { styles } from './styles'
 import { Input } from '@/app/components/input'
 import { useState } from 'react'
+import { Contact } from '../components/contact'
 
 
 export function Home(){
@@ -26,6 +27,10 @@ export function Home(){
                     </Feather>
                 </Input>
             </View>
+            <Contact contact={{
+                name: "Pedroso",
+                image: require("@/assets/avatar.jpeg")
+            }} />
         </View>
     )
 }
